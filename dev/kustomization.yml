@@ -11,10 +11,10 @@ resources:
 
 patches:
   # Si replicas.yaml est un JSON Patch (op: replace) :
-  - path: replicas.yaml
+  - path: replicas.yml
     target:
       kind: Deployment
       name: clinic-deploy
       
   # Si patch-routing.yaml est un YAML classique (Strategic Merge) :
-  - path: patch-routing.yaml
+  - path: patch-routing.yml
